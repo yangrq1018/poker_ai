@@ -1,0 +1,36 @@
+[project]
+name = "poker-ai"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "martin",email = "yang.ruoqi@outlook.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "numpy (>=2.2.5,<3.0.0)",
+    "scipy (>=1.15.3,<2.0.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "matplotlib (>=3.10.3,<4.0.0)",
+    "click (==7.0)",
+    "dill (==0.3.1.1)",
+    "enlighten (==1.5.2)",
+    "ipdb (==0.12.3)",
+    "pytest (==5.4.3)",
+    "pyyaml (==5.3.1)",
+    "rich (==1.0.0)",
+    "recommonmark (==0.6.0)",
+    "sphinx (==3.0.4)",
+    "sphinx-rtd-theme (==0.4.3)",
+    "blessed (>=1.21.0,<2.0.0)",
+    "tqdm (>=4.67.1,<5.0.0)"
+]
+
+[project.scripts]
+poker_ai = "poker_ai.cli.runner:cli"
+
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
